@@ -23,9 +23,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Barcelona" id="gKK-dB-jcU">
-                        <barButtonItem key="rightBarButtonItem" title="Message" id="0kf-iX-599">
+                        <barButtonItem key="rightBarButtonItem" title="Message" id="xI0-xG-3Yu">
                             <connections>
-                                <segue destination="vXZ-lx-hvc" kind="show" id="Ie8-ra-fck"/>
+                                <segue destination="vXZ-lx-hvc" kind="show" id="gqL-W8-GJh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -72,6 +72,12 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5K0-cb-DIb"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nameLabel" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1a-pT-uY7">
+                                <rect key="frame" x="16" y="146" width="180" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter a Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YCX-Ke-SDk">
                                 <rect key="frame" x="16" y="292" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -80,6 +86,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -87,11 +95,12 @@
                         <outlet property="enterNameTextField" destination="h07-9b-9Dc" id="t1u-23-5m6"/>
                         <outlet property="mailButton" destination="wWl-u7-pfY" id="Ir8-EP-2xb"/>
                         <outlet property="messageLabel" destination="WfV-YY-peR" id="KfB-Ak-BF3"/>
+                        <outlet property="nameLabel" destination="Y1a-pT-uY7" id="Y4D-de-EMH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1719" y="-173"/>
+            <point key="canvasLocation" x="1534" y="-165"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="am4-vi-fn6">
