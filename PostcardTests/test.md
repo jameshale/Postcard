@@ -1,4 +1,4 @@
-#### Create a data grid#### 
+### Create a data grid###
 
 Each data grid consists of a group with lots of scripts and objects.
 Luckily, you do not need to recreate all that from scratch. Instead you
@@ -16,7 +16,7 @@ The code to copy a datagrid:
     set the name of it to "my Datagrid"
     set the dgProp["style"] of group "my Datagrid" to "table"
 
-#### Create the Row template#### 
+## Create the Row template##
 
 In theory, your data grid is already ready for use. But for the IDE to
 interact correctly with the new data grid, you also need to add a
@@ -53,7 +53,7 @@ unique description for each column:
     set the dgText[firstLineIsNames] of group "my DataGrid" to theData
    
 
-#### Prepare the Columns of the Data Grid ####
+#### Prepare the Columns of the Data Grid
 
 Because you are creating the datagrid from arbitrary data, you will also
 need to ***dynamically create*** all necessary columns. To do that you
@@ -68,7 +68,7 @@ take this and replace tab with return:
     replace tab with return in theColumns
     set the dgProp["columns"] of group "my DataGrid" to theColumns
 
-#### Everything together#### 
+#### Everything together
 
 To test out the example scripts, simply copy the following **mouseUp**
 handler into a button of an empty stack, and click on it with the
@@ -153,6 +153,10 @@ Here is the code that will scroll the selected line to the top of the data grid.
 #### The Result ####
 
 [link to ward top](#Create-the-Row-template)
+
+[link to ward top](#Create the Row template)
+
+[Create the Row template][]
 
 After executing the code the row will have been moved to the top of the data grid.
 
